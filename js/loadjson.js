@@ -1,11 +1,8 @@
 console.log ("i am here");
 
-var Chatty = (function () {
+var Chatty = (function (taco) {
   var messageArray = [];
-
-
-  return {
-    loadMessages: function() {
+  taco.loadMessages = function() {
       var loader = new XMLHttpRequest();
 
       loader.addEventListener("load", function () {
@@ -15,8 +12,7 @@ var Chatty = (function () {
         // Invoke the callback function so that the caller knows
         // that the process is complete. Make sure to pass the
         // message array as an argument.
-        console.log(messageArray);
-        return messageArray;
+        Chatty.showMessages(messageArray);
       });
 
       loader.addEventListener("error", function () {
@@ -26,6 +22,6 @@ var Chatty = (function () {
       loader.open("GET", "messages.json");
       loader.send();
     }
-  }
-})();
+    return taco;
+})(Chatty || {});
 

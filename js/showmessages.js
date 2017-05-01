@@ -1,9 +1,9 @@
-function showMessages(mess){
-
+var Chatty = (function(taco){
+	taco.showMessages = function(mess){
 	output = document.getElementById("messages");
-	for(i=0; i<mess.length;i++){
+	for(i = 0; i < mess.length; i++){
 		output.innerHTML += mess[i] + "<button id='i'>Delete</button><br>";
 	}
 }
-
-Chatty.loadMessages(showMessages);
+	return taco;
+})(Chatty);
