@@ -29,4 +29,4 @@ input.addEventListener("keyup", function(event){
 });
 
 Chatty.loadMessages();
-Chatty.showMessages();
+//Chatty.showMessages();
