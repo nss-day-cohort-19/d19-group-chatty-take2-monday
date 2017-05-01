@@ -8,17 +8,15 @@
 </head>
 
 <body>
-	<div class="navbar navbar-default navbar-static-top" role="navigation">
+	<div class="navbar navbar-default navbar-static-top" role="navigation" id="nav">
         <div class="navbar-header col-sm-2">
             <a class="navbar-brand" rel="home" href="#">Chatty!!!</a>
         </div>
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <form class="navbar-form">
                 <input class="col-sm-6 col-sm-offset-1" type="text" id="usr-input">
 
                 <button class="btn btn-default col-sm-2 col-sm-offset-1" type="button" id="clear">Clear</button>
-            </form>
         </div>
     </div>
 
@@ -35,7 +33,7 @@
 
         <div id="container">
             <h2>Messages:</h2>
-            <div id="messages"></div>
+            <div id="messages" class="light-msg"></div>
         </div>
     </div>
 
