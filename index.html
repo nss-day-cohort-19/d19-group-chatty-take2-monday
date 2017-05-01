@@ -6,32 +6,39 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
+
 <body>
 	<div class="navbar navbar-inverse navbar-static-top" role="navigation">
-        <div class="navbar-header">
+        <div class="navbar-header col-sm-2">
             <a class="navbar-brand" rel="home" href="#">Chatty!!!</a>
         </div>
+
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <div class="col-sm-3 col-md-3 pull-center">
-                <form class="navbar-form" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Type your message here" name="srch-term" id="srch-term"><br>
-                        <div class="input-group-btn">
-                            <button class="btn btn-default" type="submit">Clear</button><br>
-                        </div>
-                    </div>
-                </form>
-            </div>
+            <form class="navbar-form">
+                <input class="col-sm-6 col-sm-offset-1" type="text" id="usr-input">
+
+                <button class="btn btn-default col-sm-2 col-sm-offset-1" type="submit" id="clear">Clear</button>
+            </form>
         </div>
     </div>
+
     <div id="wrapper">
-        <input id="darkTheme" type="checkbox" name="theme"> Dark Theme
-        <input id="makeLarge" type="checkbox" name="text"> Large Text
+        <div class="col-sm-2 col-sm-offset-4">
+            <input id="darkTheme" type="checkbox" name="theme">
+            <label for="theme">Dark Theme</label>
+        </div>
+
+        <div>
+            <input id="makeLarge" type="checkbox" name="text">
+            <label for="text">Large Text</label>
+        </div>
+
         <div id="container">
             <h2>Messages:</h2>
             <div id="messages"></div>
         </div>
     </div>
+
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
