@@ -1,22 +1,22 @@
 console.log ("i am here");
 
 var Chatty = (function () {
-  var messages = [];
-  
+  var messageArray = [];
+
 
   return {
-    loadMessages: function (showMessages) {
+    loadMessages: function() {
       var loader = new XMLHttpRequest();
 
       loader.addEventListener("load", function () {
         // Set the value of the private array
-        messages = JSON.parse(this.responseText);
+        messageArray = JSON.parse(this.responseText);
         console.log("messages data is loaded");
         // Invoke the callback function so that the caller knows
-        // that the process is complete. Make sure to pass the 
+        // that the process is complete. Make sure to pass the
         // message array as an argument.
-        showMessages(messages);
-
+        console.log(messageArray);
+        return messageArray;
       });
 
       loader.addEventListener("error", function () {
@@ -25,9 +25,7 @@ var Chatty = (function () {
 
       loader.open("GET", "messages.json");
       loader.send();
-
     }
-
   }
 })();
 
