@@ -4,16 +4,9 @@ var clear = document.getElementById('clear'),
 console.log(messages.innerHTML);
 clear.addEventListener('click', function(){
 	messages.innerHTML = '';
+	clear.setAttribute("disabled", true);
 })
 
-if(messages.innerHTML === '') {
-	// clear.setAttribute("disabled", true);
-	console.log('the shit');
-	console.log();
-}else {
-	clear.setAttribute("disabled", false);
-	console.log("fuck");
-}
 
 Chatty.loadMessages();
 Chatty.showMessages();
