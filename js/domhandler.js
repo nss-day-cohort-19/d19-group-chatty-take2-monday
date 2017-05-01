@@ -21,5 +21,12 @@ largeText.addEventListener('click', function(){
 	document.getElementsByTagName('body')[0].classList.toggle('larger');
 });
 
+input.addEventListener("keyup", function(event){
+	if(event.keyCode === 13){
+		// create new message and update DOM
+		Chatty.showMessages();
+	}
+});
+
 Chatty.loadMessages();
 Chatty.showMessages();
