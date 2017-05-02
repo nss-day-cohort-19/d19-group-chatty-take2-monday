@@ -13,7 +13,7 @@ var Chatty = (function (taco) {
         // that the process is complete. Make sure to pass the
         // message array as an argument.
         Chatty.showMessages();
-        Chatty.deleteMessages();
+        //Chatty.deleteMessages(mess);
       });
 
       loader.addEventListener("error", function () {
