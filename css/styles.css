@@ -18,7 +18,6 @@
 
 .light-msg {
     width: 100%;
-    min-height: 65vh;
     border: 1px solid black;
 }
 
@@ -29,7 +28,6 @@
 
 .dark-msg {
     width: 100%;
-    min-height: 65vh;
     border: 1px solid white;
 }
 
