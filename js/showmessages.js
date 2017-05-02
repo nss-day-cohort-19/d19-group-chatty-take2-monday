@@ -1,5 +1,4 @@
 var Chatty = (function(taco) {
-    var mess = [];
     taco.showMessages = function(){
     input = document.getElementById("usr-input");
     output = document.getElementById("messages");
@@ -7,10 +6,11 @@ var Chatty = (function(taco) {
     for(i = 0; i < mess.length; i++){
         output.innerHTML += `<div class="test"><p class="col-sm-6">${mess[i]}<p><button id="btn${i}" class="delete btn btn-secondary">Delete</button></div>`;
     };
-    console.log("mess", mess);
+   // console.log("mess", mess);
     input.addEventListener ("keypress", function(key) {
         if (key.keyCode === 13) {
-            console.log("second mess", mess);
+            //console.log("second mess", mess);
+
 
             output.innerHTML += `<div class="test"><p class="col-sm-6">${input.value}<p><button id="btn${mess.length}" class="delete btn btn-secondary">Delete</button></div>`;
 
@@ -23,7 +23,9 @@ var Chatty = (function(taco) {
 
         };
     })
+
     Chatty.deleteMessages(mess);
+
 }
 return taco;
 })(Chatty);

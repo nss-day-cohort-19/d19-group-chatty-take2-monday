@@ -6,8 +6,10 @@ var Chatty = (function (taco) {
   taco.loadMessages = function() {
     var loader = new XMLHttpRequest();
 
+
     loader.addEventListener("load", function () {
       messageArray = JSON.parse(this.responseText);
+
 
       console.log("messages data is loaded");
 

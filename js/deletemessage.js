@@ -1,4 +1,9 @@
 var Chatty = (function(taco) {
+<<<<<<< HEAD
+
+    //var mess = [];
+=======
+>>>>>>> master
     taco.deleteMessages = function(mess){
         console.log("i am here within the deleteMessages function", mess);
 
@@ -14,11 +19,13 @@ var Chatty = (function(taco) {
                 console.log(mess);
 
                 mess.splice(j, 1, "");
+
                 console.log(mess);
 
                 event.target.closest("div").remove();
                 //console.log("deleteMessage", deleteMessage);
             })
+
         }
     }
     return taco;

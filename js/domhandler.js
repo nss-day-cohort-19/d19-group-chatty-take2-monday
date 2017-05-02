@@ -8,13 +8,13 @@ var clear = document.getElementById('clear'),
 clear.addEventListener('click', function(){
     messages.innerHTML = '';
     clear.setAttribute("disabled", true);
-    console.log(clear);
+   // console.log(clear);
 });
 
 input.addEventListener ("keypress", function(key) {
     if (key.keyCode === 13) {
     	clear.removeAttribute("disabled");
-    	console.log(clear);
+    	//console.log(clear);
     }
 });
 
