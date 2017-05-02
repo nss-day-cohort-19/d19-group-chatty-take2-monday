@@ -8,7 +8,15 @@ var clear = document.getElementById('clear'),
 clear.addEventListener('click', function(){
     messages.innerHTML = '';
     clear.setAttribute("disabled", true);
+    console.log(clear);
 });
+
+// input.addEventListener ("keypress", function(key) {
+//     if (key.keyCode === 13) {
+//     	clear.setAttribute("disabled", false);
+//     	console.log(clear);
+//     }
+// });
 
 darkTheme.addEventListener('click', function(){
     document.getElementsByTagName('body')[0].classList.toggle('dark');
