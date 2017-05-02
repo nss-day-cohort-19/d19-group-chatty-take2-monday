@@ -1,9 +1,5 @@
 var Chatty = (function(taco) {
-<<<<<<< HEAD
 
-    //var mess = [];
-=======
->>>>>>> master
     taco.deleteMessages = function(mess){
         console.log("i am here within the deleteMessages function", mess);
 
