@@ -20,7 +20,6 @@ input.addEventListener ("keypress", function(key) {
 
 darkTheme.addEventListener('click', function(){
     document.getElementsByTagName('body')[0].classList.toggle('dark');
-    //document.querySelector(':not(input[type="text"]').toggle('dark');
     nav.classList.toggle('navbar-inverse');
     nav.classList.toggle('navbar-default');
     messages.classList.toggle('dark-msg');
