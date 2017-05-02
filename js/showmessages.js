@@ -5,21 +5,22 @@ var Chatty = (function(taco) {
     output = document.getElementById("messages");
     mess = taco.getMessages();
     for(i = 0; i < mess.length; i++){
-        output.innerHTML += `<div class="test">` + mess[i] + `<button id="btn${i}" class="delete">Delete</button></div><br>`;
+        output.innerHTML += `<div class="test"><p class="col-sm-6">${mess[i]}<p><button id="btn${i}" class="delete">Delete</button></div>`;
     };
     console.log("mess", mess);
     input.addEventListener ("keypress", function(key) {
         if (key.keyCode === 13) {
             console.log("second mess", mess);
 
-            output.innerHTML += `<div class="test">` + input.value + `<button id="btn${mess.length}" class="delete">Delete</button></div><br>`;
+            output.innerHTML += `<div class="test"><p class="col-sm-6">${input.value}<p><button id="btn${mess.length}" class="delete">Delete</button></div>`;
             mess.push(input.value);
-            Chatty.deleteMessages();
+            Chatty.deleteMessages(mess);
             console.log("third mess", mess);
             input.value = '';
 
         };
     })
+    Chatty.deleteMessages(mess);
 }
     return taco;
 })(Chatty);
