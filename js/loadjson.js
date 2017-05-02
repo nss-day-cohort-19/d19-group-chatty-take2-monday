@@ -28,6 +28,8 @@ var Chatty = (function (taco) {
     return messageArray;
   }
 
+
+
     return taco;
 })(Chatty || {});
 
