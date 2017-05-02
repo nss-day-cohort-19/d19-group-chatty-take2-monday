@@ -11,12 +11,12 @@ clear.addEventListener('click', function(){
     console.log(clear);
 });
 
-// input.addEventListener ("keypress", function(key) {
-//     if (key.keyCode === 13) {
-//     	clear.setAttribute("disabled", false);
-//     	console.log(clear);
-//     }
-// });
+input.addEventListener ("keypress", function(key) {
+    if (key.keyCode === 13) {
+    	clear.removeAttribute("disabled");
+    	console.log(clear);
+    }
+});
 
 darkTheme.addEventListener('click', function(){
     document.getElementsByTagName('body')[0].classList.toggle('dark');
