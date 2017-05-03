@@ -27,7 +27,12 @@ var Chatty = (function(taco) {
     output = document.getElementById("messages");
     mess = taco.getMessages();
     for(i = 0; i < mess.length; i++){
-        output.innerHTML += `<div class="test"><p class="col-sm-6">${mess[i]}<p><button id="btn${i}" class="delete btn btn-secondary">Delete</button><p class="col-sm-2 col-sm-offset-1">${displayTime()}</p></div>`;
+        output.innerHTML += `<div class="test">
+        						<p class="col-sm-6">${mess[i]}</p>
+        						<button id="editbtn${i}" class="edit btn btn-secondary">Edit</button>
+        						<button id="btn${i}" class="delete btn btn-secondary">Delete</button>
+        						<p class="col-sm-2 col-sm-offset-1">${displayTime()}</p>
+        					 </div>`;
     };
    // console.log("mess", mess);
     input.addEventListener ("keypress", function(key) {
@@ -35,10 +40,16 @@ var Chatty = (function(taco) {
             //console.log("second mess", mess);
 
 
-            output.innerHTML += `<div class="test"><p class="col-sm-6">${input.value}<p><button id="btn${mess.length}" class="delete btn btn-secondary">Delete</button><p class="col-sm-2 col-sm-offset-1">${displayTime()}</p></div>`;
+            output.innerHTML += `<div class="test">
+						            <p class="col-sm-6">${input.value}</p>
+						            <button id="editbtn${i}" class="edit btn btn-secondary">Edit</button>
+						            <button id="btn${mess.length}" class="delete btn btn-secondary">Delete</button>
+						            <p class="col-sm-2 col-sm-offset-1">${displayTime()}</p>
+						         </div>`;
             console.log("now", displayTime());
             mess.push(input.value);
 
+            Chatty.editMessages(mess);
             Chatty.deleteMessages(mess);
 
             console.log("third mess", mess);
@@ -51,8 +62,9 @@ var Chatty = (function(taco) {
         };
     })
 
+    Chatty.editMessages(mess);
     Chatty.deleteMessages(mess);
 
 }
 return taco;
-})(Chatty);
+})(Chatty || {});

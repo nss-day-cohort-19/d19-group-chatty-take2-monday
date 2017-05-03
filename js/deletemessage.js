@@ -27,5 +27,5 @@ var Chatty = (function(taco) {
         }
     }
     return taco;
-})(Chatty);
+})(Chatty || {});
 

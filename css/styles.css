@@ -38,3 +38,11 @@
 #usr-input {
     color: black;
 }
+
+.inputedit {
+    /*background-color: inherit;*/
+    border: none;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding-left: 2px;
+}
