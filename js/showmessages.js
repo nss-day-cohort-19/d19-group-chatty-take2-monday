@@ -44,6 +44,10 @@ var Chatty = (function(taco) {
             console.log("third mess", mess);
             input.value = '';
 
+            if(document.getElementsByClassName('test').length > 20){
+                messages.removeChild(messages.childNodes[0]);
+            }
+
         };
     })
 
