@@ -20,8 +20,10 @@ var Chatty = (function(taco) {
 
                 event.target.closest("div").remove();
                 //console.log("deleteMessage", deleteMessage);
+                if(messages.innerHTML == '') {
+                    clear.setAttribute('disabled', true);
+                }
             })
-
         }
     }
     return taco;
