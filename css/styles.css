@@ -37,9 +37,14 @@
 
 #usr-input {
     color: black;
-    margin-top: 30px;
-    height: 100px;
-    font-size: x-large;
+}
+
+.inputedit {
+    /*background-color: inherit;*/
+    border: none;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding-left: 2px;
 }
 
 #clear {
