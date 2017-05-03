@@ -3,6 +3,7 @@
 <head>
 	<title>Chatty</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
@@ -21,6 +22,39 @@
         </div>
     </div>
 
+    <div class="container">
+          <!-- Trigger the modal with a button -->
+          <center>
+          <button type="button" class="btn btn-info btn-lg btn pull-right" data-toggle="modal" data-target="#myModal">Change Theme</button></center>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Change Theme</h4>
+                </div>
+                <div class="modal-body"><label>Bg Color</label>
+                    <select class="selectpicker" id="sel-bg-color">
+                        <option>Dark</option>
+                        <option>Light</option>
+                    </select><label>Font Color</label>
+                    <select class="selectpicker" id="sel-font-color">
+                        <option>Red</option>
+                        <option>Black</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default"  data-dismiss="modal">Close</button>
+                  <button id="save" onclick="save()" class="btn btn-width bkgrnd-cyan save-details" type="button" name="save-details">Save</button>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
     <div id="wrapper">
         <div class="col-sm-2 col-sm-offset-4">
             <input id="darkTheme" type="checkbox" name="theme">
@@ -30,6 +64,7 @@
         <div>
             <input id="makeLarge" type="checkbox" name="text">
             <label for="text">Large Text</label>
+
         </div>
 
         <div id="container">
@@ -37,6 +72,10 @@
             <div id="messages" class="light-msg"></div>
         </div>
     </div>
+     
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

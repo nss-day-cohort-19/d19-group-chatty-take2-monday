@@ -22,8 +22,21 @@
 }
 
 .dark {
-    background-color: black;
-    color: #fefefe;
+    background-color: darkgray;
+    
+}
+
+.light {
+    background-color: white;
+    
+}
+
+.red{
+    color:red;
+}
+
+.black{
+    color: black;
 }
 
 .dark-msg {
