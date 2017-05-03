@@ -39,7 +39,6 @@ var Chatty = (function(taco) {
         if (key.keyCode === 13) {
             //console.log("second mess", mess);
 
-
             output.innerHTML += `<div class="test">
 						            <p class="col-sm-6">${input.value}</p>
 						            <button id="editbtn${i}" class="edit btn btn-secondary">Edit</button>
