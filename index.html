@@ -4,20 +4,22 @@
 	<title>Chatty</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
 	<div class="navbar navbar-default navbar-static-top" role="navigation" id="nav">
         <div class="navbar-header col-sm-2">
-            <a class="navbar-brand" rel="home" href="#">Chatty!!!</a>
+            <a href="#" class="navbar-left"><img src="logo.png" id="logo"></a>
+           <!--  <a class="navbar-brand" rel="home" href="#"><img src= class="img-responsive" alt="chatty logo"></a> -->
         </div>
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
 
                 <input class="col-sm-6 col-sm-offset-1" type="text" id="usr-input">
 
-                <button class="btn btn-default col-sm-2 col-sm-offset-1" type="button" id="clear">Clear</button>
+                <button class="btn btn-default col-sm-2 col-sm-offset-1 btn-lg" type="button" id="clear">Clear</button>
         </div>
     </div>
 
@@ -37,7 +39,16 @@
             <div id="messages" class="light-msg"></div>
         </div>
     </div>
-
+    <footer class="container-fluid text-center">
+        <br>
+        <p>&copy Chatty! 2017</p>
+        <div class="text-center center-block">
+            <a href="https://www.facebook.com/nashvillesoftwareschool"><i class="fa fa-facebook-square fa-3x social"></i></a>
+            <a href="https://twitter.com/NashSoftware"><i class="fa fa-twitter-square fa-3x social"></i></a>
+            <a href="https://plus.google.com/"><i class="fa fa-google-plus-square fa-3x social"></i></a>
+            <a href="mailto:chatty@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
+        </div>
+    </footer>
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
