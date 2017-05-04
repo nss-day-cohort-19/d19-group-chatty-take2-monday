@@ -4,8 +4,7 @@ var clear = document.getElementById('clear'),
     darkTheme = document.getElementById('darkTheme'),
     nav = document.getElementById('nav'),
     largeText = document.getElementById('makeLarge');
-    var  modalbgColor = document.getElementById("sel-bg-color");
-    var modalfontColor = document.getElementById("sel-font-color");
+    var save = document.getElementById("save");
 
 
 clear.addEventListener('click', function(){
@@ -32,38 +31,12 @@ largeText.addEventListener('click', function(){
     document.getElementsByTagName('body')[0].classList.toggle('larger');
 });
 
-modalbgColor.addEventListener("change", function(){
-    console.log("bgevent", event.target.value);
-    if(event.target.value == "Dark"){
-        console.log("DARKKKKK");
-        document.getElementsByTagName('body')[0].classList.toggle('dark');
-        nav.classList.toggle('navbar-inverse');
-        nav.classList.toggle('navbar-default');
-        messages.classList.toggle('dark-msg');
-    } else 
-    {
-
-    }
+save.addEventListener("click", function(event){
+    bgcolor = document.getElementById("mybgColor").value;
+    fontcolor = document.getElementById("myfontColor").value;
+    console.log("i am here within save event listener", bgcolor,fontcolor);
+    document.body.style.background = bgcolor;
+    document.body.style.color = fontcolor;
 });
-
-modalfontColor.addEventListener("change", function(){
-    console.log("fontevent", event.target.value);
-     if(event.target.value == "red"){
-        console.log("DARKKKKK");
-        document.getElementsByTagName('body')[0].classList.toggle('red');
-        nav.classList.toggle('navbar-inverse');
-        nav.classList.toggle('navbar-default');
-        messages.classList.toggle('dark-msg');
-    } else if(event.target.value == "black"){
-        console.log("DARKKKKK");
-        document.getElementsByTagName('body')[0].classList.toggle('black');
-        nav.classList.toggle('navbar-inverse');
-        nav.classList.toggle('navbar-default');
-        messages.classList.toggle('dark-msg');
-
-        
-    }
-
-});
-
+  
 Chatty.loadMessages();

@@ -31,13 +31,7 @@
     
 }
 
-.red{
-    color:red;
-}
 
-.black{
-    color: black;
-}
 
 .dark-msg {
     width: 100%;
@@ -45,9 +39,31 @@
 }
 
 .larger {
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 
 #usr-input {
     color: black;
+}
+
+.inputedit {
+    /*background-color: inherit;*/
+    border: none;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding-left: 2px;
+}
+
+#clear {
+    margin-top: 50px;
+}
+
+.navbar {
+    height: 150px;
+}
+
+#logo {
+    height: 75%;
+    width: 75%;
+    margin-left: 75px;
 }
