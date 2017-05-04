@@ -4,6 +4,8 @@ var clear = document.getElementById('clear'),
     darkTheme = document.getElementById('darkTheme'),
     nav = document.getElementById('nav'),
     largeText = document.getElementById('makeLarge');
+    var save = document.getElementById("save");
+
 
 clear.addEventListener('click', function(){
     messages.innerHTML = '';
@@ -29,4 +31,12 @@ largeText.addEventListener('click', function(){
     document.getElementsByTagName('body')[0].classList.toggle('larger');
 });
 
+save.addEventListener("click", function(event){
+    bgcolor = document.getElementById("mybgColor").value;
+    fontcolor = document.getElementById("myfontColor").value;
+    console.log("i am here within save event listener", bgcolor,fontcolor);
+    document.body.style.background = bgcolor;
+    document.body.style.color = fontcolor;
+});
+  
 Chatty.loadMessages();

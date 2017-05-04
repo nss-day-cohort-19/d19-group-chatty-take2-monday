@@ -17,19 +17,7 @@ var Chatty = (function(taco) {
                     }
                 });
 
-            //     var j = Number(event.toElement.id.slice(-1));
-
-            //     console.log(mess);
-
-            //     mess.splice(j, 1, "");
-
-            //     console.log(mess);
-
-            //     event.target.closest("div").remove();
-            //     //console.log("deleteMessage", deleteMessage);
-            //     if(messages.innerHTML == '') {
-            //         clear.setAttribute('disabled', true);
-            //     }
+            
             })
         }
     }
