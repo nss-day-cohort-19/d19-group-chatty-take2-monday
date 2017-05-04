@@ -38,5 +38,5 @@ save.addEventListener("click", function(event){
     document.body.style.background = bgcolor;
     document.body.style.color = fontcolor;
 });
-  
+
 Chatty.loadMessages();
